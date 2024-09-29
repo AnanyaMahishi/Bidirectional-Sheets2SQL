@@ -34,6 +34,16 @@ This project provides a tool for bidirectional synchronization between Google Sh
 - **Sync Priority with Checksum**: Changes in Google Sheets are given priority over the SQL database when both have been modified. A checksum is used to detect changes, ensuring efficient syncing.
 - **Modified Time Check**: The system fetches Google Sheets data only when there are modifications, reducing unnecessary reads.
 
+### Architecture Overview
+
+![Component Diagram](assets/component_dia.png)
+
+*Figure 1: Component Diagram*
+
+![Sequence Diagram](assets/seq_dia.png)
+
+*Figure 2: Sequence Diagram*
+
 ### How It Works
 
 #### Google Sheets to MySQL Sync:
